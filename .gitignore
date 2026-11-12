@@ -1,0 +1,33 @@
+# Do not commit local environments or runtime artefacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Application secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases, queues and logs
+/db.sqlite3
+/db.sqlite3-*
+/dump.rdb
+*.sqlite3
+*.log
+/nohup.out
+
+# Generated uploads and collected static assets
+/staticfiles/
+/media/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
